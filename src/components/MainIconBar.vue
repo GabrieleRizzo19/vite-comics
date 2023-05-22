@@ -6,9 +6,25 @@
             return{
                 iconBarItem:[
                     {
-                        img: '../assets/img/buy-comics-digital-comics.png',
+                        img: new URL('../assets/img/buy-comics-digital-comics.png', import.meta.url).href,
                         text: "DIGITAL COMICS"
-                    }
+                    },
+                    {
+                        img: new URL('../assets/img/buy-comics-merchandise.png', import.meta.url).href,
+                        text: "DC MERCHANDISE"
+                    },
+                    {
+                        img: new URL('../assets/img/buy-comics-subscriptions.png', import.meta.url).href,
+                        text: "SUBSCRIPTIONS"
+                    },
+                    {
+                        img: new URL('../assets/img/buy-comics-shop-locator.png', import.meta.url).href,
+                        text: "SHOP LOCATOR"
+                    },
+                    {
+                        img: new URL('../assets/img/buy-dc-power-visa.svg', import.meta.url).href,
+                        text: "DC POWER VISA"
+                    },
                 ]
             }
         }
@@ -22,13 +38,14 @@
         <!-- <h2>ICON BAR</h2> -->
         <div class="container d-flex align-items-center">
             <ul class="d-flex justify-content-between">
-                <li class="d-flex align-items-center">
+                <!-- <li class="d-flex align-items-center">
                     <img src="../assets/img/buy-comics-digital-comics.png" alt="">
-                    {{ iconBarItem[0].text }}</li>
-                <li>AAAAAAAAA</li>
-                <li>AAAAAAAAA</li>
-                <li>AAAAAAAAA</li>
-                <li>AAAAAAAAA</li>
+                    DIGITAL COMICS
+                </li> -->
+                <li v-for="item in iconBarItem" class="d-flex align-items-center">
+                    <img :src="item.img" alt="">
+                    {{ item.text}}
+                </li>
             </ul>
         </div>
         
@@ -45,6 +62,8 @@
 
         div{
             height: 100%;
+            padding-left: 2rem;
+            padding-right: 2rem;
         }
         
         ul{
@@ -56,7 +75,7 @@
             li{
                 height: 100%;
                 img{
-                    height: 50%;
+                    height: 35%;
                     margin-right: 1em;
                 }
             }
