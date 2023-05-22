@@ -18,9 +18,12 @@
 <style lang="scss" scoped>
 
     .jumbotron{
-        object-fit: cover;
         height: 400px;
         overflow: hidden;
+
+        img{
+            width: 100%;
+        }
     }
 
 </style>
