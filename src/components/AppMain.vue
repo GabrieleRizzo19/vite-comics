@@ -2,12 +2,15 @@
 
     import MainContent from './MainContent.vue';
     import MainIconBar from './MainIconBar.vue';
+    import MainJumbotron from './Jumbotron.vue';
+
 
     export default{
         name: "AppMain",
         components: {
             MainContent,
-            MainIconBar
+            MainIconBar,
+            MainJumbotron
         }
     }
 
@@ -17,6 +20,7 @@
 
     <main>
         <div class="main-wrapper">
+            <MainJumbotron />
             <MainContent />
             <MainIconBar />
         </div>

@@ -28,6 +28,7 @@
     .main-content-wrapper{
         background-color: black;
         color: white;
+        text-align: center;
     }
 
 </style>

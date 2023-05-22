@@ -93,15 +93,21 @@ export default {
             <img :src="card.thumb" alt="">
             <figcaption>ACTION COMICS</figcaption>
         </div>
+
     </div>
+
+    <button>LOAD MORE</button>
+
+
 
 </template>
 
 <style lang="scss" scoped>
 
+
     .cards-container{
 
-        padding: 2rem 0;
+        padding: 3rem 0;
 
         &::after{
             content: "";
@@ -131,6 +137,15 @@ export default {
         left: -20px;
         transform: translateY(-50%);
         z-index: 0;
+    }
+
+    button{
+        padding: 1rem;
+        background-color: #0282f9;
+        margin-bottom: 1rem;
+        font-weight: bold;
+        color: white;
+        cursor: pointer;
     }
 
 </style>
