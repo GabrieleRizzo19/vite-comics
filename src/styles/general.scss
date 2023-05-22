@@ -9,12 +9,17 @@ body{
 }
 
 .container{
+    width: 90%;
     max-width: 1200px;
     margin: 0 auto;
 }
 
 .d-flex{
     display: flex;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
 }
 
 .justify-content-between{

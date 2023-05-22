@@ -1,7 +1,12 @@
 <script>
 
+    import MainContentCards from './MainContentCards.vue';
+
     export default{
-        name: "MainContent"
+        name: "MainContent",
+        components: {
+            MainContentCards
+        }
     }
 
 </script>
@@ -11,7 +16,7 @@
     <div class="main-content-wrapper">
         <div class="container">
 
-            <h2>CONTENT GOES HERE</h2>
+            <MainContentCards />
 
         </div>
     </div>
