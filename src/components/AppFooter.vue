@@ -1,11 +1,13 @@
 <script>
 
     import FooterTop from './FooterTop.vue';
+    import FooterBottom from './FooterBottom.vue';
 
     export default{
         name: "AppFooter",
         components:{
-            FooterTop
+            FooterTop,
+            FooterBottom
         }
     }
 
@@ -15,15 +17,11 @@
 
     <footer>
         <FooterTop />
+        <FooterBottom />
     </footer>
 
 </template>
 
 <style scoped>
-
-    footer{
-        height: 500px;
-        border: 2px solid black;
-    }
 
 </style>
