@@ -65,6 +65,11 @@
             font-weight: bold;
             color: grey;
             padding: 1rem;
+            cursor: pointer;
+
+            &:hover{
+                color: #0282f9;
+            }
         }
     }
 

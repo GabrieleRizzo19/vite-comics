@@ -1,23 +1,31 @@
 <script>
 
+    import MainContent from './MainContent.vue';
+    import MainIconBar from './MainIconBar.vue';
+
     export default{
-        name: "AppMain"
+        name: "AppMain",
+        components: {
+            MainContent,
+            MainIconBar
+        }
     }
 
 </script>
 
 <template>
 
-    <main class="container">
-        <h1>QUESTO è IL MAIN</h1>
+    <main>
+        <div class="main-wrapper">
+            <MainContent />
+            <MainIconBar />
+        </div>
     </main>
 
 </template>
 
 <style scoped>
 
-    main{
-        background-color: green;
-    }
+
 
 </style>
