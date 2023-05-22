@@ -8,7 +8,7 @@
 
 <template>
 
-    <footer>
+    <footer class="container">
         <h1>QUESTO è IL FOOTER</h1>
     </footer>
 
@@ -17,6 +17,7 @@
 <style scoped>
 
     footer{
+        height: 500px;
         background-color: blue;
     }
 

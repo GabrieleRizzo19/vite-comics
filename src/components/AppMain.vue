@@ -8,7 +8,7 @@
 
 <template>
 
-    <main>
+    <main class="container">
         <h1>QUESTO è IL MAIN</h1>
     </main>
 

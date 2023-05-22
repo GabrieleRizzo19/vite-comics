@@ -1,7 +1,23 @@
 <script>
 
     export default{
-        name: "AppHeader"
+        name: "AppHeader",
+        data(){
+            return {
+                headerLink: [
+                    "CHARACTERS",
+                    "COMICS",
+                    "MOVIES",
+                    "TV",
+                    "GAMES",
+                    "COLLECTIBLES",
+                    "VIDEOS",
+                    "FANS",
+                    "NEWS",
+                    "SHOP"
+                ]
+            }
+        }
     }
 
 </script>
@@ -9,15 +25,48 @@
 <template>
 
     <header>
-        <h1>QUESTO è L'HEADER</h1>
+        <div class="header-wrapper container d-flex justify-content-between align-items-center ">
+            <div>
+                <img src="../assets/img/dc-logo.png" alt="HEADER LOGO">
+            </div>
+            <div>
+                <ul class="d-flex justify-content-between">
+                    <!-- <button class="btn">PAGE</button>
+                    <button class="btn">PAgsffgGE</button>
+                    <button class="btn">PAdfgGE</button>
+                    <button class="btn">PAGE</button>
+                    <button class="btn">PgAfgdfgGE</button>
+                    <button class="btn">PAGE</button>
+                    <button class="btn">PAdgfdGE</button>
+                    <button class="btn">PAGE</button> -->
+                    <li v-for="link in headerLink"><button> {{ link }}</button></li>
+                </ul>
+            </div>
+        </div>
     </header>
 
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 
     header{
-        background-color: red;
+        height: 120px;
     }
+
+    .header-wrapper{
+        height: 100%;
+
+        ul{
+            list-style: none;
+        }
+
+        button{
+            background-color: transparent;
+            font-weight: bold;
+            color: grey;
+            padding: 1rem;
+        }
+    }
+
 
 </style>
