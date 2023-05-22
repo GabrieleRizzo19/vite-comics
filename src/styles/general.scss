@@ -21,6 +21,18 @@ body{
     justify-content: space-between;
 }
 
+.justify-content-start{
+    justify-content: flex-start;
+}
+
 .align-items-center{
     align-items: center;
+}
+
+.pos-absolute{
+    position: absolute;
+}
+
+.pos-relative{
+    position: relative;
 }

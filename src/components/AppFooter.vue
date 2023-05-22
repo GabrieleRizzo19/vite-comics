@@ -1,15 +1,20 @@
 <script>
 
+    import FooterTop from './FooterTop.vue';
+
     export default{
-        name: "AppFooter"
+        name: "AppFooter",
+        components:{
+            FooterTop
+        }
     }
 
 </script>
 
 <template>
 
-    <footer class="container">
-        <h1>QUESTO è IL FOOTER</h1>
+    <footer>
+        <FooterTop />
     </footer>
 
 </template>
@@ -18,7 +23,7 @@
 
     footer{
         height: 500px;
-        background-color: blue;
+        border: 2px solid black;
     }
 
 </style>
