@@ -91,7 +91,7 @@ export default {
         <span class="cards-container-tag pos-absolute">CURRENT SERIES</span>
         <div v-for="card in cards" class="card">
             <img :src="card.thumb" alt="">
-            <figcaption>ACTION COMICS</figcaption>
+            <figcaption>{{ card.series }}</figcaption>
         </div>
 
     </div>
@@ -108,6 +108,7 @@ export default {
     .cards-container{
 
         padding: 3rem 0;
+        text-align: start;
 
         &::after{
             content: "";
@@ -118,6 +119,12 @@ export default {
 
             margin-bottom: 3rem;
             margin-right: 1rem;
+
+            figcaption{
+                width: 200px;
+                word-break: break-all;
+
+            }
 
             img{
                 display: block;
