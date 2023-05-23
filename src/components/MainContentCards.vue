@@ -87,7 +87,7 @@ export default {
 
 <template>
 
-    <div class="cards-container d-flex flex-wrap justify-content-between pos-relative">
+    <div class="cards-container d-flex flex-wrap justify-content-center pos-relative">
         <span class="cards-container-tag pos-absolute">CURRENT SERIES</span>
         <div v-for="card in cards" class="card">
             <img :src="card.thumb" alt="">
@@ -109,11 +109,6 @@ export default {
 
         padding: 3rem 0;
         text-align: start;
-
-        &::after{
-            content: "";
-            flex: auto;
-        }
 
         .card{
 

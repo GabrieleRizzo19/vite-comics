@@ -27,6 +27,7 @@
 
 <style lang="scss" scoped>
 
+    @use '../styles/partials/variables' as *;
     .footer-bottom{
         height: 120px;
         background-color: #303030;
@@ -39,12 +40,12 @@
         button{
             background-color: transparent;
             padding: 1rem;
-            border: 2px solid #0282f9;
+            border: 2px solid $blue-dc;
             color: white;
         }
 
         h4{
-            color:  #0282f9;
+            color:  $blue-dc;
         }
 
         .social-link-container{
